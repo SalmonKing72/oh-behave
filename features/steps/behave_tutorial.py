@@ -20,7 +20,3 @@ def step_impl(context):
 @then('it should have a title "Google"')  
 def step(context):  
    assert context.browser.title == "Google"
-
-@when('I visit truck monitor dev')
-def step_impl(context):
-    context.browser.get('http://corp592/')
