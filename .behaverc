@@ -1,0 +1,6 @@
+[behave]
+summary=false
+junit=true
+junit_directory=reports
+quiet=true
+tags=@testing
