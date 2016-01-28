@@ -1,5 +1,6 @@
 from behave import *
 from selenium import webdriver
+from googlePage import GooglePage
 
 
 @given('we have behave installed')
@@ -19,9 +20,10 @@ def step_impl(context):
 
 @when('I visit google')
 def step_impl(context):
-    context.browser.get('http://www.google.com')  
+    page = GooglePage(context)
+    page.navigate()
  
 
-@then('it should have a title "Google"')
-def step(context):
-    assert context.browser.title == "Google"
+@then('it should have a title "{title}"')  
+def step(context, title):  
+   assert context.browser.title == title
