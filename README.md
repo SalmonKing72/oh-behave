@@ -9,9 +9,14 @@ developed using python 2.7
 - update pip `python -m pip install --upgrade pip`
 - install behave `pip install -U behave`
 - install selenium `pip install -U selenium`
+- Get chromedriver
 - For Windows: download and install [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
     - put it in your python home, Scripts directory so that it is on the PATH
 - For OSX: use homebrew to install chromedriver
+- Get phantomjs
+- For Windows: download and install [phantomjs](https://bitbucket.org/ariya/phantomjs/downloads/)
+    - extract it in your python home, Scripts directory so that it is on the PATH
+- For OSX: use homebrew to install phantomjs
     
 Learn about [Behave](https://pythonhosted.org/behave/index.html)
 Learn about [webdriver python api](http://selenium-python.readthedocs.org/en/latest/index.html)

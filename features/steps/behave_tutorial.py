@@ -1,7 +1,5 @@
 from behave import *
-from selenium import webdriver
-from googlePage import GooglePage
-
+from pages import GooglePage
 
 @given('we have behave installed')
 def step_impl(context):
