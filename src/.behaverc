@@ -1,7 +1,7 @@
 [behave]
 summary=false
 junit=true
-junit_directory=reports
+junit_directory=../reports
 quiet=true
 tags=@testing
 stdout_capture=False
