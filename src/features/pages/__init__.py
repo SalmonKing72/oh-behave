@@ -1,11 +1,8 @@
-class BasePage(object):
-    url = None
-    
-    def __init__(self, context):
-        self.context = context
-        
-    def navigate(self):
-        self.context.browser.get(self.url)
+from page_objects import PageObject, PageElement
 
-class GooglePage(BasePage):
-    url = 'http://www.google.com'
+
+class DevcorrPage(PageObject):
+    contact_button = PageElement(id_='contactButton')
+
+    def contact_button_exists(self):
+        return self.contact_button != None

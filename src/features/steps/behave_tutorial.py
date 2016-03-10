@@ -1,5 +1,10 @@
 from behave import *
-from pages import GooglePage
+from pages import DevcorrPage
+
+
+def setPage(context):
+    context.page = DevcorrPage(context.browser, root_uri="http://devcorr.com")
+
 
 @given('we have behave installed')
 def step_impl(context):
@@ -16,12 +21,16 @@ def step_impl(context):
     assert context.failed is False
     
 
-@when('I visit google')
+@when('I visit devcorr')
 def step_impl(context):
-    page = GooglePage(context)
-    page.navigate()
+    setPage(context)
+    context.page.get('/')
  
 
 @then('it should have a title "{title}"')  
 def step(context, title):  
-   assert context.browser.title == title
+    assert context.browser.title == title
+
+@then('I should see the contact button')
+def step(context):
+    assert context.page.contact_button_exists
