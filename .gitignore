@@ -2,3 +2,4 @@
 reports/
 .idea/
 *.log
+.vscode/
