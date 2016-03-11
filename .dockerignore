@@ -1,7 +1,7 @@
 LICENSE
 *.md
 .gitignore
-Dockerfile
+phantomjs-dockerfile
 .dockerignore
 .idea/
 *.log
