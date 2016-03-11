@@ -9,6 +9,7 @@ developed using python 2.7
 - update pip `python -m pip install --upgrade pip`
 - install behave `pip install -U behave`
 - install selenium `pip install -U selenium`
+- install page_objects package `pip install -U page_objects`
 - Get chromedriver
 - For Windows: download and install [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
     - put it in your python home, Scripts directory so that it is on the PATH
